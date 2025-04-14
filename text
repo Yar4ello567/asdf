@@ -1,0 +1,24 @@
+python -m venv venv
+venv/scripts/activate
+pip install django
+django-admin startproject "name"
+переименовать папку с приложением, открыть ее
+выбрать интерпретатор
+python manage.py startapp "name"
+создаем папку templates и static
+
+def index(request):
+    return render(request, '/index.html')
+
+from asdf import views       path('', views.index, )
+
+STATIC_DIRS =[
+    BASE_DIR / 'static'
+]
+
+{% load static %}       <link rel="stylesheet" href={% static '/main.css'%}>
+
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
