@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Интернет-магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Магазин</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="product.html">Товары</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Ваша корзина</h1>
+
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="cart-item-image" style="background-image: url('https://via.placeholder.com/100')"></div>
+                    <div class="cart-item-details">
+                        <h3>Название товара 1</h3>
+                        <p>Количество: 1</p>
+                        <p>Цена: 5 999 ₽</p>
+                    </div>
+                    <button class="btn btn-danger">Удалить</button>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-image" style="background-image: url('https://via.placeholder.com/100')"></div>
+                    <div class="cart-item-details">
+                        <h3>Название товара 2</h3>
+                        <p>Количество: 2</p>
+                        <p>Цена: 14 998 ₽</p>
+                    </div>
+                    <button class="btn btn-danger">Удалить</button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Итого</h2>
+                <p style="margin: 15px 0;">Товары (3): 20 997 ₽</p>
+                <p style="margin: 15px 0;">Доставка: Бесплатно</p>
+                <p style="font-size: 20px; font-weight: bold; margin: 20px 0;">Общая сумма: 20 997 ₽</p>
+                <button class="btn" style="width: 100%; padding: 12px;">Оформить заказ</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Интернет-магазин. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
