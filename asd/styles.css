@@ -245,7 +245,7 @@ footer {
 }
 
 /* Адаптивность */
-@media (max-width: 768px) {
+@media (max-width: 390px) {
     .product-page {
         grid-template-columns: 1fr;
     }

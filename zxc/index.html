@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СпортИнвентарь - Аренда спортивного оборудования</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">СпортИнвентарь</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="auth.html" class="btn">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filter-section">
+            <h1>Аренда спортивного инвентаря</h1>
+            <div class="filter-group">
+                <input type="text" placeholder="Поиск по названию...">
+            </div>
+            <div class="filter-group">
+                <select>
+                    <option value="">Все категории</option>
+                    <option value="ski">Лыжи</option>
+                    <option value="bike">Велосипеды</option>
+                    <option value="fitness">Тренажеры</option>
+                    <option value="winter">Зимний спорт</option>
+                    <option value="water">Водный спорт</option>
+                </select>
+            </div>
+            <button class="btn">Применить фильтры</button>
+        </section>
+
+        <section>
+            <h2>Доступный инвентарь</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Горные+лыжи" alt="Горные лыжи" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Горные лыжи</h3>
+                        <p class="card-text">Профессиональные горные лыжи для всех уровней подготовки.</p>
+                        <p class="card-text"><strong>Цена:</strong> 1500 руб./сутки</p>
+                        <a href="booking.html" class="btn">Забронировать</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Горный+велосипед" alt="Горный велосипед" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Горный велосипед</h3>
+                        <p class="card-text">Прочный горный велосипед для активного отдыха.</p>
+                        <p class="card-text"><strong>Цена:</strong> 1000 руб./сутки</p>
+                        <a href="booking.html" class="btn">Забронировать</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Беговая+дорожка" alt="Беговая дорожка" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Беговая дорожка</h3>
+                        <p class="card-text">Электрическая беговая дорожка с программами тренировок.</p>
+                        <p class="card-text"><strong>Цена:</strong> 800 руб./сутки</p>
+                        <a href="booking.html" class="btn">Забронировать</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Сноуборд" alt="Сноуборд" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Сноуборд</h3>
+                        <p class="card-text">Качественный сноуборд для любителей зимнего экстрима.</p>
+                        <p class="card-text"><strong>Цена:</strong> 1200 руб./сутки</p>
+                        <a href="booking.html" class="btn">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 СпортИнвентарь. Все права защищены.</p>
+            <p>Контактный телефон: +7 (123) 456-78-90</p>
+        </div>
+    </footer>
+</body>
+</html>

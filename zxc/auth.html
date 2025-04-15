@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход / Регистрация - СпортИнвентарь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">СпортИнвентарь</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="auth.html" class="btn">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav-links" style="display: flex; justify-content: center; margin-bottom: 20px;">
+                    <li><a href="#login" class="btn" id="login-tab">Вход</a></li>
+                    <li><a href="#register" class="btn btn-secondary" id="register-tab">Регистрация</a></li>
+                </ul>
+
+                <!-- Форма входа -->
+                <div id="login-form">
+                    <h2>Вход в личный кабинет</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <input type="password" id="password" required>
+                        </div>
+
+                        <button type="submit" class="btn">Войти</button>
+                        <a href="#" style="display: block; margin-top: 10px;">Забыли пароль?</a>
+                    </form>
+                </div>
+
+                <!-- Форма регистрации (изначально скрыта) -->
+                <div id="register-form" style="display: none;">
+                    <h2>Регистрация</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="fullname">ФИО</label>
+                            <input type="text" id="fullname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-email">Email</label>
+                            <input type="email" id="reg-email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-password">Пароль</label>
+                            <input type="password" id="reg-password" required>
+                            <p class="error-message">Пароль должен содержать не менее 6 символов</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Подтверждение пароля</label>
+                            <input type="password" id="confirm-password" required>
+                        </div>
+
+                        <button type="submit" class="btn">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 СпортИнвентарь. Все права защищены.</p>
+            <p>Контактный телефон: +7 (123) 456-78-90</p>
+        </div>
+    </footer>
+
+    <script>
+        // Простой переключатель между формами входа и регистрации
+        document.getElementById('login-tab').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('register-form').style.display = 'none';
+            this.className = 'btn';
+            document.getElementById('register-tab').className = 'btn btn-secondary';
+        });
+
+        document.getElementById('register-tab').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-form').style.display = 'block';
+            this.className = 'btn';
+            document.getElementById('login-tab').className = 'btn btn-secondary';
+        });
+    </script>
+</body>
+</html>
